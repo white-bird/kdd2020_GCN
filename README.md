@@ -51,32 +51,13 @@ python run_local_test.py --dataset_dir=./data/demo --code_dir=./code_submission
 You can change the argument `dataset_dir` to other datasets (e.g. the two
 practice datasets we provide). On the other hand, you can also modify the directory containing your other sample code.
 
-## Download practice datasets
-We provide 3 practice datasets for participants. They can use these datasets to:
-1. Do local test for their own algorithm;
-2. Enable meta-learning.
 
-You may refer to [challenge site](https://www.automl.ai/competitions/3) for public datasets.
+## Solution
 
-Unzip the zip file and you'll get datasets.
+The GCN assumed the edge link two similar nodes, which is usually not incorrect. Different nodes create links like men and women, teachers and students, etc.  
+This solution implies a network to calculate classification problem in this type of graph by using single structure and shows great stability in the competition with 4th in the public leaderboard and 3rd in the private leaderboard.
 
-## Prepare a ZIP file for submission on CodaLab
-Zip the contents of `code_submission`(or any folder containing
-your `model.py` file) without the directory structure:
-```
-cd code_submission/
-zip -r mysubmission.zip *
-```
-then use the "Upload a Submission" button to make a submission to the
-competition page on challenge platform.
 
-Tip: to look at what's in your submission zip file without unzipping it, you
-can do
-```
-unzip -l mysubmission.zip
-```
+## Contributor
 
-## Report bugs and create issues
-
-If you run into bugs or issues when using this starting kit, please please contact us via:
-<autograph2020@4paradigm.com>
+Zhenzhe Ying, whitebird827@163.com
